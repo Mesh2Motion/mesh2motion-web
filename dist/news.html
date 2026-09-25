@@ -48,6 +48,59 @@
 
 
         <section class="news-item">
+            <h2 id="update13">Update 13: Mirror animations, FBX Exporter</h2>
+            <p class="news-date">9/25/2026 | Scott Petrovic</p>
+
+            <h3>Export Mirrored Animations</h3>
+            <img src="images/update13/mirror-animations.png" alt="Mirror animations" />
+            <p>Many animations only worked well in one direction. Think punches, kicks, throws, attacks. I added the ability to allow you to export mirrored versions of animations if you want. This is a toggle that appears when you select an animation. It is a three way toggle to decide what you want to export: no mirroring, mirroring, both non mirrored and mirrored.</p>
+
+            <h3>FBX Exporter</h3>
+            <img src="images/update13/fbx-export.png" alt="FBX Exporter" />
+            <p>Some game engines just seem to like FBX better for some reason. Added FBX 7.4 export formats for Unity3D and Unreal Engine that help change things like the world space orientation.</p>
+
+            <h3>New Low Poly Horror Models</h3>
+            <img src="images/update13/low-poly-horror.png" alt="New low poly horror models" />
+            <p>Added 20 CC0 low poly horror 3d models to the model variations for human. (credits to https://elbolilloduro.itch.io/characters-psx). This was brought up on Discord and though it would be a neat thing to add. </p>
+
+
+            <h3>New Human Animations</h3>
+            <img src="images/update13/more-animations.png" alt="New human animations" />
+            <p>Added 16 human animations: 2x cheer, 3x fishing, 2x golf, 2x help, insult, kick, salute, 4x turn.</p>
+
+             <h3>Other release notes</h3>
+            <ul class="release-notes-list">
+                <li>Don't export hand bone animation data if we don't have those bones (hand selection on human rigs)</li>
+                <li>Exported animations always should have underscores instead of spaces</li>
+                <li>FBX Import: Do better job parsing FBX header data to fix some 3d model failing to load</li>  
+                <li>FBX Import: "Bake" transform better with model import when using 3d model with multiple objects</li>
+                <li>FBX Import: Don't import emissive property for now as that causes issues with some models</li>
+                <li>FBX Import: Smarter importing when 3d model is very small</li>
+                <li>Add model analysis report to help debug problems with imported models</li>
+                <li>Show better indicator when importing a rig with multiple root bones as this isn't supported</li>
+                <li>Make download settings consistent across all pages. They were missing on retarget page</li>
+                <li>Editing bones: Show bone names at bottom when hovering over bone instead of small on the side pane</li>
+                <li>Use same bone visualization style across all pages</li></li>
+                <li>New arm plane adjustment to help with A-Pose models skinning their arms without affecting torso</li>
+                <li>Retargeting: Make sure to replace the material if texture is broken on loading</li>
+                <li>Retargeting: Preview needs at least one bone mapped before starting</li>
+                <li>Retargeting: Improve how rest pose is calculated to help with retargeting accuracy </li>
+                <li>Retargeting: Add arm extension contorl to be the same as other pages</li>
+                <li>Retargeting: Overhaul the bone name matching to try to do a better job guessing bone names</li>
+                <li>Retargeting: Do better job finding root bone for rigs by not just taking first bone on the list and assuming it is the root </li>
+                <li>Show better indicator with forward direction on grid plane</li>
+                <li>Tweak value range for arm extensions to allow for more extending</li>
+                <li>Model variations can now use arm extension adjustment (bunny model needed this) </li>
+                <li>Model variations can now use pelvis position adjustment for better foot placement on floor</li>                
+            </ul>
+
+
+        </section>
+
+
+
+
+        <section class="news-item">
             <h2 id="update12">Update 12: Horses and Offline Application</h2>
             <p class="news-date">8/2/2026 | Scott Petrovic</p>
 
